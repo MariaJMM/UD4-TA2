@@ -1,0 +1,260 @@
+/* importo la reglas para normalizar las propiedades de los navegadores */
+@import url('normalize.css');
+/** BASIC */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--color-Fondo: #a9a9a9;
+	--color-texto: #ffffff;
+}
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-transform: capitalize;
+}
+
+p, ol, ul {
+	font-size: 0.8em;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+a {
+	color: #000000;
+}
+
+p a{
+	font-style: italic;
+}
+
+a:hover {
+	text-decoration: none;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.centrar {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+ul.desordenada {
+	list-style-type: square;
+}
+
+ul.desordenada li {
+	color: rebeccapurple;
+}		
+.desordenada li:nth-child(odd) { /* filas pares */
+	background-color: lightgray;
+}
+
+.desordenada li:nth-child(even) { /* filas impares */
+	background-color: darkgray;
+}
+/* pone el primer párrafo después de un h2 en negrita 
+h2 + p {
+    font-weight: bold;
+}
+/*Está bien, pero al poner sobre el párrafo otro elemento el párrafo no se pone en negrita.
+ Para remarcar todos los primeros párrafos en el aside podemos usar
+*/
+section p:first-of-type{
+    font-weight: bold;
+}
+
+section p{
+	padding-top: 10px;
+}
+/** HEADER */
+
+header {
+	margin: 0em 0em 1em 0em; 
+	padding: 0em 1em;
+	background-color: #CCCCCC;
+}
+
+header h1 {
+	margin: 0em;
+	padding: 0em;
+	color: var(--color-texto);
+}
+
+header h2 {
+	margin: 0em;
+	padding: 0em;
+	font-size: 1em;
+	color: var(--color-texto);
+}
+
+/**nav -> menu */
+
+nav.menu {
+	float: left;
+	width: 10%;
+	border: 1px solid rgb(105, 105, 105); /*borde: tamaño tipo color*/
+	border-radius: 10px; /*Borde redondeado*/
+	box-shadow: 10px 10px 5px #888888; /*sombra del borde: separación_horizontal separación_vertical opacidad_sombra color*/
+	margin: 0.5em;
+	/*padding: 0.5em 1.5em 0.5em 1.5em;*/
+}
+nav.menu a{
+	text-decoration: none;
+	font-size: medium;
+}
+nav ul {
+	list-style: none; /*elimino la viñeta*/
+	text-align: center;
+	line-height: 3em;
+	/*border: 1px solid #ddd;*/
+}
+
+nav.menu ul li {
+	font-size: 1.5em;
+	border-bottom: 1px solid #ddd;
+	border-radius: 4px; /*Borde redondeado*/
+	padding: 8px 16px;
+}
+
+/* acción al pasar sobre el li */
+nav.menu li:hover {
+	background-color: var(--color-Fondo);
+	color: #FFFFFF;
+
+}
+
+nav.menu a:hover {
+	text-decoration: none; /*elimino el color y subrayado de los enlaces, al pasar sobre ellos*/
+	background-color: var(--color-Fondo);
+	color: #FFFFFF;
+	display: block;
+}
+/** CONTENT */
+
+#content {
+	float: left;
+	width: 70%;
+	margin-left: 2em;
+	text-align: justify;
+}
+#content ul li{
+	line-height: 2em; /* separación entre li del contenido */
+	margin-left: 30px;
+}
+
+/** LEFT */
+#left {
+	float: left;
+	width: 49%;
+}
+/*
+.remarcar{
+	font-weight: bold;
+}*/
+
+/** RIGHT */
+#right {
+	float: right;
+	width: 49%;
+}
+
+/** ADSIDE */
+aside {
+	float: left;
+	width: 10%;
+	border: 1px solid rgb(105, 105, 105);
+	margin: 0.5em 0 0.5em 1em;
+	padding: 0.5em 1.5em 0.5em 1.5em;
+	background-color: rgba(220, 220, 220, 0.425);
+	border-radius: 10px;
+	font-size: medium;
+	line-height: 1.5em;
+}
+aside ul, li {
+	margin: 0 auto;
+	padding: 0;
+}
+/** FOOTER */
+
+footer {
+	clear: both;
+	padding: 0em 1em;
+	background-color: #CCCCCC;
+	height: 50px;
+}
+
+footer p {
+	margin: 0em;
+	padding: 0em;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: right;
+}
+footer p.derecha{
+	float: right;
+}
+
+footer p.izquierda {
+	float: left;
+}
+
+footer a {
+	display: inline;
+	float: left;
+}
+footer img.imgcss {
+    border:0;
+    width:88px;
+    height:31px;
+}
+
+@media screen and (max-width: 820px ) {
+	#content {
+    width: 60%;
+    margin-left: 2em;
+	}
+
+	nav.menu {
+	width: auto;
+    float: none;
+	}
+
+	nav.menu li {
+	display: inline-block;
+	padding: 2px;
+    padding: 0;
+    border: 0;
+	border-left-color: var(--color-Fondo);
+  }
+  nav.menu a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  aside {
+    width: auto;
+  }
+
+  #left {
+    clear: both;
+	float: none;
+	width: auto;
+  }
+
+#right {
+	clear: both;
+	float: none;
+	width: auto;
+}
+	
+}

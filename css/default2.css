@@ -1,0 +1,196 @@
+@import url(normalize.css); /* importamos la hoja de estilos antes de cargar las reglas de esta */
+/* no debes emplear como nombre de un id o class una letra, debe ser un nombre que sea facilmente identificable el tipo de elemento o propiedad a aplicar 
+Falta un lateral completo
+*/
+header {
+    background-color: rgb(154, 162, 170);
+    height: 90px;
+    margin-left: 8px;
+    width: 1400px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+}
+
+#c {
+    line-height: 0px;
+    font-size: 1em;
+    padding-bottom: 5px;
+    padding-left: 2px;
+}
+
+#d {
+    padding-top: 2px;
+    padding-left: 15px;
+}
+
+#e {
+    text-align: center;
+}
+
+#a {
+    color: black;
+}
+
+#uno {
+    width: 50px;
+    margin-left: 0%;
+}
+
+#uno ul {
+    float: left;
+    border-radius: 10px;
+    border: solid 1px rgb(105, 105, 105);
+    text-shadow: 10px 10px 5px #888888;
+    margin: 0.5em;
+    font-size: 20px;
+}
+
+#uno li {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 4px;
+    border: solid 1px #dddddd;
+    text-align: center;
+    list-style: none;
+}
+
+/*#uno ul{border:solid 5px rgb(75, 75, 161);height:1020px;width:175px;position:relative;top:-20px; overflow: hidden;}*/
+.b, a {
+    list-style: none;
+    margin-top: 35px;
+}
+
+nav {
+    float: left;
+    margin-left: 5px;
+    width: 15%;
+    height: 100px;
+    color: black;
+}
+
+nav, ul {
+    font-size: 1.5em;
+}
+
+a {
+    color: black;
+}
+
+a.f:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+a.dos:hover {
+    color: white;
+    background-color: #a9a9a9;
+    text-decoration: none;
+}
+
+p, li {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*#right{border:solid 5px yellow;height:455px;overflow:hidden;}*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*#left{border:solid 5px yellow;overflow: hidden;}*/
+#content {
+    margin-left: 190px;
+    float: left;
+    position: relative;
+    top: -20px;
+    right: 5px;
+    text-align: justify;
+    height: 800px;
+    width: 1000px;
+    overflow: hidden;
+}
+
+/*footer{border:solid 5px red;width:1215px;height:70px;text-align:justify ;overflow: hidden;position:absolute;top:1150px;}*/
+footer p {
+    color: white;
+    background-color: rgb(205, 214, 223);
+    float: left;
+}
+
+footer {
+    width: 990px;
+    overflow: hidden;
+    position: relative;
+    top: 850px;
+}
+
+.fin {
+    float: right;
+}
+
+:root {
+    --color-texto: white;
+}
+
+#c {
+    color: var(--color-texto);
+}
+
+#d {
+    color: var(--color-texto);
+}
+
+.tres {
+    font-weight: bold;
+}
+
+#content {
+    column-count: 2;
+    column-width: 7.84px;
+}
+
+.f {
+    line-height: 2em;
+}
+
+.de {
+    text-align: left;
+    padding-left: 0px;
+}
+
+aside {
+    background-color: rgba(220, 220, 220, 0.425);
+    width: 155px;
+    height: 160px;
+    float: right;
+    position: relative;
+    top: -830px;
+    left: 150px;
+    overflow: hidden;
+    margin-left: 1890px;
+    line-height: 1.5em;
+    border-radius: 4px;
+    border: solid 1px #dddddd;
+}
+
+aside ul li {
+    list-style: none;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.da {
+    text-align: justify;
+    line-height: 0em;
+}
